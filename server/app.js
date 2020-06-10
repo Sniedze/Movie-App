@@ -9,6 +9,7 @@ const usersRoute = require(__dirname + "/routes/users.js");
 const passwordResetRoute = require(__dirname + "/routes/password_reset.js");
 const knex = Knex(knexFile.development);
 const helmet = require("helmet");
+const path = require("path");
 
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -16,15 +17,15 @@ const authLimiter = rateLimit({
 });
 
 const app = express();
-
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
 app.use(
   cors({
     origin: "http://localhost:3000",
   })
 );
+app.use(express.static(path.join(__dirname, "/build")));
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use(helmet());
 
@@ -37,6 +38,9 @@ app.use(movieRoute);
 app.use(usersRoute);
 app.use(passwordResetRoute);
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "build/index.html"));
+});
 const port = process.env.PORT || 8080;
 
 const server = app.listen(port, (error) => {

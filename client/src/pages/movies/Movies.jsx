@@ -13,7 +13,7 @@ const Movies = () => {
       setMovies(movies);
     };
     fetchUsersMovies();
-  }, []);
+  }, [movies]);
 
   const updateStatus = async (e, movieId, watched, title) => {
     try {

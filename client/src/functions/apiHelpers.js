@@ -15,7 +15,7 @@ const login = async (username, password) => {
 };
 
 const getAllMovies = async () => {
-  const { data: movies } = await axios.get(API_URL);
+  const { data: movies } = await axios.get(`${API_URL}allmovies`);
   return movies;
 };
 

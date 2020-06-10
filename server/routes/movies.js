@@ -5,7 +5,7 @@ const { checkToken } = require(__dirname + "/../helpers/checkToken.js");
 
 //******** Get all the movies if the user is authenticated******/
 
-router.get("/", async (req, res, next) => {
+router.get("/allmovies", async (req, res, next) => {
   try {
     const movies = await Movie.query();
     res.json(movies);

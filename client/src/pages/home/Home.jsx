@@ -8,13 +8,16 @@ const Home = () => {
   useEffect(() => {
     const fetchAllMovies = async () => {
       const movies = await apiHelpers.getAllMovies();
-      const uniqueMovies = [...new Set(movies.map((obj) => obj.title))].map(
-        (title) => {
-          return movies.find((obj) => obj.title === title);
-        }
-      );
+      //console.log(movies);
+      if (movies) {
+        const uniqueMovies = [...new Set(movies.map((obj) => obj.title))].map(
+          (title) => {
+            return movies.find((obj) => obj.title === title);
+          }
+        );
 
-      setMovies((movies) => uniqueMovies);
+        setMovies((movies) => uniqueMovies);
+      }
     };
     fetchAllMovies();
   }, []);
