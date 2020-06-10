@@ -1,0 +1,31 @@
+.menu {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #1d4e89;
+  width: 85px;
+  padding: 10px 20px;
+  border: 2px solid #1d4e89;
+  border-radius: 30px;
+  text-align: center;
+}
+.active {
+  background-color: #1d4e89;
+  color: white;
+}
+.logoutA {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: grey;
+  width: 85px;
+  padding: 10px 20px;
+  border: 2px solid grey;
+  border-radius: 30px;
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dee7e7;
+}
+
+.App,
+#root {
+  font-family: Expletus Sans;
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+td {
+  padding: 5px 10px;
+  text-align: center;
+}
+th {
+  width: 150px;
+}
+#isWatched {
+  margin: 0 auto;
+}
+input,
+.button {
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+.button {
+  background-color: #ec6e4c;
+  width: 100px;
+  color: #f4faff;
+  cursor: pointer;
+  font-size: 1em;
+  height: 35px;
+  text-align: center;
+}
+.delete-button {
+  width: 70px;
+  height: 25px;
+  font-size: 0.8em;
+}
+.button:hover {
+  background-color: #189396;
+  color: #f4faff;
+}
+
+input {
+  padding-left: 30px;
+  background-color: #f4faff;
+  width: 150px;
+  font-size: 10pt;
+}
+input:focus {
+  color: #99b0bd;
+  font-size: 16px;
+}

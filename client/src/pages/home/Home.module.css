@@ -1,0 +1,15 @@
+.movies {
+  border-radius: 20px;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #64b3f4 0%, #c2e59c 100%);
+  width: 50%;
+}
+
+.li {
+  list-style: disc;
+}
+.h4 {
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}

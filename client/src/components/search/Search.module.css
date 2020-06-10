@@ -1,0 +1,37 @@
+.search_container {
+  background-color: #1d4e89;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+form {
+  padding: 0 24%;
+  display: flex;
+  justify-content: space-around;
+}
+.input,
+.button {
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  font-size: 1.2em;
+}
+.button {
+  background-color: #ec6e4c;
+  width: 150px;
+  color: #f4faff;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #189396;
+  color: #f4faff;
+}
+
+.input {
+  padding-left: 30px;
+  background-color: #f4faff;
+}
+.input:focus {
+  color: #99b0bd;
+  font-size: 16px;
+}

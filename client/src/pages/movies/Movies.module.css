@@ -1,0 +1,73 @@
+.spanStyle {
+  bottom: 0.5px;
+  right: 2px;
+  position: absolute;
+  color: grey;
+}
+.divStyle {
+  width: 20px;
+  height: 20px;
+  border: solid black 2.5px;
+  position: relative;
+  left: 0;
+  border-radius: 50%;
+}
+
+.checkbox {
+  width: 17px;
+  height: 17px;
+  border: solid black 1.5px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+.movies {
+  border-radius: 20px;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #64b3f4 0%, #c2e59c 100%);
+  width: 50%;
+}
+
+.li {
+  list-style: disc;
+}
+.h4 {
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  width: 100vw;
+}
+
+.movie {
+  margin: 20px;
+  width: 210px;
+}
+.movie img {
+  height: 280px;
+}
+.addMovieLink {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+.message {
+  color: #ec6e4c;
+}
+.watched {
+  color: grey;
+}
+.checkboxWatched {
+  width: 17px;
+  height: 17px;
+  border: solid grey 1.5px;
+  position: relative;
+}
